@@ -12,7 +12,7 @@ export default function operate(numberOne, numberTwo, operation) {
   if (operation === "x") {
     return one.times(two).toString();
   }
-  if (operation === "÷") {
+  if (operation === "÷" || operation === "/") {
     if (two == "0") {
       alert('Divide by 0 error');
       return "0";

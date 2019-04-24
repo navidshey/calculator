@@ -8,6 +8,7 @@ class Display extends React.Component {
     return (
       <div className="component-display">
         <div>{this.props.value}</div>
+        <div className="history-display">{this.props.history}</div>
       </div>
     );
   }

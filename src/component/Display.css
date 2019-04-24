@@ -11,3 +11,8 @@
   font-size: 2.5rem;
   padding: 0.2rem 0.7rem 0.1rem 0.5rem;
 }
+
+.history-display {
+  min-height: 63px;
+  font-size: -webkit-xxx-large !important;
+}

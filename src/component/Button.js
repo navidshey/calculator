@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import "./Button.css";
 
 class Button extends React.Component {
+
   handleClick = () => {
     this.props.clickHandler(this.props.name);
   };
@@ -12,7 +13,8 @@ class Button extends React.Component {
       "component-button",
       this.props.orange ? "orange" : "",
       this.props.wide ? "wide" : "",
-    ];
+      this.props.clicked ? "clicked" : ""
+    ];5
 
     return (
       <div className={className.join(" ").trim()}>
@@ -25,6 +27,7 @@ Button.propTypes = {
   name: PropTypes.string,
   orange: PropTypes.bool,
   wide: PropTypes.bool,
+  isClicked: PropTypes.bool,
   clickHandler: PropTypes.func,
 };
 export default Button;
